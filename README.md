@@ -1,6 +1,6 @@
-# DevOps Project  
+# AWS Cloud Deployment & Infrastructure Project
 
-Hello! This is my submission for the Discover Dollar DevOps task. For this project, I took a standard MEAN stack application and built a complete, automated cloud deployment pipeline from scratch. 
+Hello! This is my AWS Cloud Deployment & Infrastructure Project. For this project, I took a standard MEAN stack application and built a complete, automated cloud deployment pipeline from scratch. 
 
 This project was a great hands-on experience in cloud infrastructure, containerization, and automation. Below is a breakdown of how I approached the task and the solutions I implemented.
 
@@ -48,8 +48,8 @@ If you'd like to test my setup on your local machine, run the following commands
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/Akshay-2222/discover-dollar-devops-task.git](https://github.com/Akshay-2222/discover-dollar-devops-task.git)
-   cd discover-dollar-devops-task
+   git clone [https://github.com/Akshay-2222/AWS-Cloud-Deployment-Infrastructure-Project]
+   cd AWS-Cloud-Deployment-Infrastructure-Project
 
 2.Build and start the containers:
 docker-compose up -d --build
