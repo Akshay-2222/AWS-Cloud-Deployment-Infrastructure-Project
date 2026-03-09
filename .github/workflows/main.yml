@@ -29,14 +29,19 @@ jobs:
         docker build -t akshaykumar2222/dd-frontend:latest ./frontend
         docker push akshaykumar2222/dd-frontend:latest
 
-    - name: Deploy to AWS EC2
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.EC2_HOST }}
-        username: ${{ secrets.EC2_USERNAME }}
-        key: ${{ secrets.EC2_SSH_KEY }}
-        script: |
-          cd discover-dollar-devops-task
-          git pull origin main
-          sudo docker-compose pull
-          sudo docker-compose up -d
+    # ---------------------------------------------------
+    # DEPLOYMENT STEP 
+    # (Commented out because the live AWS EC2 instance was terminated )
+    # To deploy: Uncomment the lines below and configure GitHub Secrets.
+    # ---------------------------------------------------
+    # - name: Deploy to AWS EC2
+    #   uses: appleboy/ssh-action@master
+    #   with:
+    #     host: ${{ secrets.EC2_HOST }}
+    #     username: ${{ secrets.EC2_USERNAME }}
+    #     key: ${{ secrets.EC2_SSH_KEY }}
+    #     script: |
+    #       cd AWS-Cloud-Deployment-Infrastructure-Project
+    #       git pull origin main
+    #       sudo docker-compose pull
+    #       sudo docker-compose up -d
